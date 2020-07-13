@@ -1,0 +1,47 @@
+#menu-wrapper {
+  background-color: royalblue;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 20px;
+  position: relative;
+  padding: 50px;
+  cursor: pointer;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  height: 12px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+}
+
+.top {
+  top: 18%;
+}
+
+.middle {
+  top: 48%;
+}
+
+.bottom {
+  top: 78%;
+}
+
+.menu-button.closed .top {
+  transform: rotate(45deg);
+  top: 48%;
+}
+
+.menu-button.closed .middle,
+.menu-button.closed .bottom {
+  transform: rotate(-45deg);
+  top: 48%;
+}
