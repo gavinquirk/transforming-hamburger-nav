@@ -1,7 +1,12 @@
-const wrapper = document.getElementById('menu-wrapper');
-const menuBtn = document.getElementsByClassName('menu-button');
+const wrapper = document.getElementById('hamburger-wrapper');
+const menuBtn = document.getElementsByClassName('hamburger-button');
+// const navOverlay = document.getElementById('nav-overlay');
+const navOverlay = document.getElementsByClassName('nav-overlay');
 
-// When menu button is clicked, toggle 'closed' class
+// When menu button is clicked
 wrapper.onclick = () => {
-  menuBtn[0].classList.toggle('closed');
+  // Toggle closed class on hamburger
+  menuBtn[0].classList.toggle('hamburger-closed');
+  // Toggle open overlay
+  navOverlay[0].classList.toggle('nav-open');
 };
